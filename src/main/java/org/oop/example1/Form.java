@@ -17,8 +17,8 @@ public class Form extends JFrame {
         super("line"); // title
         this.setBounds(500, 500, 500, 500); // bounds of frame
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        Container container = this.getContentPane(); //?
-        container.setLayout(new GridLayout(6, 2, 0, 0));//?
+        Container container = this.getContentPane();
+        container.setLayout(new GridLayout(6, 2, 0, 0));
         press.addActionListener(new ButtonEventListener());
         container.add(press);
     }
