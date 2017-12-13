@@ -14,10 +14,9 @@ public class Plain {
 
     public Point moveForvard(double distance) {
         this.distance = distance;
-        Point modifiedPoint = new Point();
-        modifiedPoint.setX(getPoint().getX() + distance * Math.cos(getCourse() / 180 * Math.PI));
-        modifiedPoint.setY(getPoint().getY() + distance * Math.sin(getCourse() / 180 * Math.PI));
-        return modifiedPoint;
+        point.setX(point.getX() + distance * Math.cos(course / 180 * Math.PI));
+        point.setY(point.getY() + distance * Math.sin(course / 180 * Math.PI));
+        return point; // обновили старые координаты
     }
 
     public void printCoordinats(Point modifiedPoint) {

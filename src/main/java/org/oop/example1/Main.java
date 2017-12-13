@@ -14,5 +14,10 @@ public class Main {
         Form form = new Form();
         form.setVisible(true);
         form.pack();
+
+
+        Form2 form2 = new Form2();
+        form2.setVisible(true);
+        form2.pack();
     }
 }
